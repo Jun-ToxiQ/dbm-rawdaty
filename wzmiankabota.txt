@@ -1,0 +1,143 @@
+// Tą raw datę wklejasz jako komendę, nie event!
+
+{
+  "name": "WzmiankaBota",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "pWnMY",
+  "actions": [
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "3",
+      "value": "2",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "Bot Member",
+      "name": "Get Bot as Member"
+    },
+    {
+      "message": "0",
+      "varName": "",
+      "info": "3",
+      "ParamN": "1",
+      "separator": "",
+      "storage": "1",
+      "varName2": "Mentioned User",
+      "count": "",
+      "name": "Store Message Params"
+    },
+    {
+      "storage": "1",
+      "varName": "Mentioned User",
+      "comparison": "1",
+      "value": "tempVars(\"Bot Member\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avat",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "object",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "19",
+      "storage": "1",
+      "varName2": "prefix",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "2",
+      "storage": "1",
+      "varName2": "ping",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "title": "Witaj!",
+      "author": "",
+      "color": "#fddbcd",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "🔧 Mój prefix to: `!`\n🛠 Pełną listę komend znajdziesz pod: `!pomoc`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "${tempVars(\"tag\")}",
+      "footerIcon": "${tempVars(\"avat\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "3"
+}
