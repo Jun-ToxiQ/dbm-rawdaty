@@ -80,12 +80,6 @@
       "name": "Store Member Info"
     },
     {
-      "info": "19",
-      "storage": "1",
-      "varName2": "prefix",
-      "name": "Store Bot Client Info"
-    },
-    {
       "info": "2",
       "storage": "1",
       "varName2": "ping",
