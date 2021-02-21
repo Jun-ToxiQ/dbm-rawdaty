@@ -255,7 +255,7 @@
     {
       "storage": "1",
       "varName": "Embed - 3",
-      "message": "__**Moderator:**__\n${tempVars(\"Tag - Command Author\")}\n\n__**Powód:**__\n${tempVars(\"Reason\")}\",
+      "message": "__**Moderator:**__\n${tempVars(\"Tag - Command Author\")}\n\n__**Powód:**__\n${tempVars(\"Reason\")}",
       "name": "Set Embed Description"
     },
     {
