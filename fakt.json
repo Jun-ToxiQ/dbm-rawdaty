@@ -1,0 +1,91 @@
+// API by Hit Nowy#1656 (331146505098493952)
+// API Link: https://luxbot.ml/api/memy
+
+{
+  "name": "fakt",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "mKKpC",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "Tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "Avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://luxbot.ml/api/fakty",
+      "path": "fakt",
+      "storage": "1",
+      "varName": "API",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "RANDOM",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "${tempVars(\"API\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "${tempVars(\"Tag\")}",
+      "footerIcon": "${tempVars(\"Avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": [
+    "joke",
+    "zart"
+  ]
+}
