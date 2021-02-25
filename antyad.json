@@ -1,0 +1,131 @@
+{
+  "name": "AntyAd",
+  "temp": "message",
+  "event-type": "2",
+  "_id": "SoyyZ",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "3",
+      "storage": "1",
+      "varName2": "Message Author",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Permissions"
+    },
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "2",
+      "storage": "1",
+      "varName2": "Treść",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "Treść",
+      "comparison": "5",
+      "value": "discord.gg",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "3",
+      "storage": "1",
+      "varName2": "Message Author",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "name": "Delete Message"
+    },
+    {
+      "title": "Wykryto reklamę!",
+      "author": "",
+      "color": "#ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed - Wykryto reklame",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed - Wykryto reklame",
+      "fieldName": "ALERT",
+      "message": "${tempVars(\"Message Author\")},\nWykryto reklamę w Twojej wiadomości!\nWiadomość została usunięta.",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "16",
+      "storage": "1",
+      "varName2": "Member Avatar URL",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "21",
+      "storage": "1",
+      "varName2": "Member Tag",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed - Wykryto reklame",
+      "message": "Wywołano przez ${tempVars(\"Member Tag\")}",
+      "footerIcon": "${tempVars(\"Member Avatar URL\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed - Wykryto reklame",
+      "channel": "5",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
