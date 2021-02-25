@@ -1,0 +1,80 @@
+// API by Hit Nowy#1656 (331146505098493952)
+// API Link: https://luxbot.ml/api/tapety
+
+{
+  "name": "tapeta",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "CrWsR",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "name",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avat",
+      "name": "Store Member Info"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://luxbot.ml/api/tapety",
+      "path": "tapeta",
+      "storage": "1",
+      "varName": "api",
+      "debugMode": "1",
+      "headers": "",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "title": "🖼 Tapeta",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "${tempVars(\"api\")}",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "em",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "em",
+      "message": "Wywołano przez ${tempVars(\"name\")}",
+      "footerIcon": "${tempVars(\"avat\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "em",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_timeRestriction": 30,
+  "_aliases": [
+    "wallpaper"
+  ],
+  "comType": "0"
+}
